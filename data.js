@@ -8,3 +8,8 @@ const honorees=[
 ['刘长安','北京凯达恒业农业技术开发有限公司','董事长，高级农艺师','农业与乡村振兴'],['刘宝平','神舟绿鹏农业科技有限公司','董事，高级农艺师','农业与乡村振兴'],['龚双情','北京市平谷区刘家店镇江米洞村','党支部书记、村委会主任','农业与乡村振兴'],['宫成','北京功成名就果蔬产销专业合作社','社长','农业与乡村振兴'],['宋丽新','北京桃山月亮湖种养殖专业合作社','理事长，高级工','农业与乡村振兴'],['邵雪松','北京市房山区西潞街道苏庄三里社区','党委书记、居委会主任','基层治理'],
 ['刘志华','北京五和博澳药业股份有限公司','副总经理，高级工程师','医药健康']
 ].map(([name,org,role,sector])=>({name,org,role,sector,brief:`立足${sector}领域，长期深耕${role.split('，')[0]}岗位，以专业能力和敬业精神服务首都发展。`}));
+
+const officialPhotos={
+ '陈春光':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202505/20250507/jpg_202505071532058_71930.jpg','陈宏达':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202504/20250429/jpg_202504291510059_54747.jpg','孟大鹏':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202504/20250429/jpg_202504291511022_87966.jpg','张莉':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202505/20250507/jpg_202505071535041_17565.jpg','高丰':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202504/20250429/jpg_202504291509042_56338.jpg','史晓刚':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202505/20250502/jpg_202505020814024_59811.jpg','王文旺':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202505/20250502/jpg_202505020813023_12942.jpg','王志伟':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202504/20250429/jpg_202504291512016_83873.jpg','宫成':'https://www.bjzgh.org/zt/2025ldmf/lmjctp/202505/20250507/jpg_202505071533035_66229.jpg'
+};
+honorees.forEach(person=>{if(officialPhotos[person.name])person.photo=officialPhotos[person.name]});
