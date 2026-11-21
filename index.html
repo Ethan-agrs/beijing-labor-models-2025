@@ -16,13 +16,20 @@
       <p class="source">资料来源：北京市总工会 · 2025年4月28日</p>
     </header>
     <section class="intro">
-      <p>按行业浏览先进事例，点击分类即可查看劳模的基本信息与岗位简介。</p>
-      <div class="stats"><span><b id="peopleCount">51</b>位劳模</span><i></i><span><b id="sectorCount">9</b>个行业</span></div>
+      <p>按行业浏览先进事例，点击分类即可查看劳模的基本信息与岗位简介，点开详情可查看本人肖像大图。</p>
+      <div class="stats"><span><b id="peopleCount">51</b>位劳模</span><i></i><span><b id="sectorCount">12</b>个行业</span></div>
     </section>
     <nav id="sectorNav" class="sector-nav" aria-label="行业分类"></nav>
     <section id="content" class="content" aria-live="polite"></section>
   </main>
   <footer>谨以此页致敬每一位在平凡岗位上创造不凡的劳动者</footer>
+
+  <!-- 原图大图灯箱 -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="关闭">×</button>
+    <img id="lightboxImg" alt="劳模肖像原图">
+  </div>
+
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
